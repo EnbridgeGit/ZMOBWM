@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>CLASENH</TOOL>
+   <SHORTTEXT>Plant Complex Table Enhancement</SHORTTEXT>
+   <CLASS>/SYCLO/CL_MM_PLANT_DO</CLASS>
+   <POST_METHODS>
+    <ENHAMETHKEYS>
+     <METHKEY>
+      <CLSNAME>/SYCLO/IF_CORE_FILTER_SERV</CLSNAME>
+      <CMPNAME>GET_DATA_FILTER_LIST</CMPNAME>
+     </METHKEY>
+    </ENHAMETHKEYS>
+   </POST_METHODS>
+   <TAB_ATTRIBUTES>
+    <ENHCLASSATTRIB>
+     <CLSNAME>/SYCLO/CL_MM_PLANT_DO</CLSNAME>
+     <CMPNAME>%_ZZ_SYCLO_CL_PLANT_DO</CMPNAME>
+     <DESCRIPT>SAP-generated, not changeable!</DESCRIPT>
+     <STATE>1</STATE>
+     <EDITORDER>1</EDITORDER>
+     <TYPTYPE>3</TYPTYPE>
+     <TYPE>OBJECT</TYPE>
+     <LOCKED>X</LOCKED>
+    </ENHCLASSATTRIB>
+   </TAB_ATTRIBUTES>
+   <SOTR>
+    <item>
+     <HEADER>
+      <CONCEPT>5460E5D6B9851B70E10080000A14D03A</CONCEPT>
+      <CREA_LAN>E</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>AAI=</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXT>
+       <CONCEPT>5460E5D6B9851B70E10080000A14D03A</CONCEPT>
+       <LANGU>E</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <STATUS>R</STATUS>
+       <LENGTH>047</LENGTH>
+       <TEXT>Plant Complex Table Enhancement</TEXT>
+      </SOTR_TEXT>
+     </ENTRIES>
+    </item>
+   </SOTR>
+   <SOTR_USE>
+    <SOTR_USE>
+     <PGMID>R3TR</PGMID>
+     <OBJECT>ENHO</OBJECT>
+     <OBJ_NAME>ZZ_SYCLO_CL_PLANT_DO</OBJ_NAME>
+     <CONCEPT>5460E5D6B9851B70E10080000A14D03A</CONCEPT>
+     <LFD_NUM>0001</LFD_NUM>
+    </SOTR_USE>
+   </SOTR_USE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

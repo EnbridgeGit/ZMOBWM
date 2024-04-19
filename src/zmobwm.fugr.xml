@@ -1,0 +1,1546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Mobility Work Manager</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZMOBWMTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZMOBWM</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_SMERP_DOCLASSIFICATION_UPD</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>BAPI Wrapper: Equipment Classification Update</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/CORE_BAPI_INPUT_STR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_EQUNR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>EQUNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_CLASSNUM</PARAMETER>
+       <TYP>KLASSE_D</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_CHARACT</PARAMETER>
+       <TYP>ATNAM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_VALUE</PARAMETER>
+       <TYP>ATWRT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_FUNCLOC</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>TPLNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <TYP>/SYCLO/CORE_BAPI_OUTPUT_STR</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Input Setting</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_EQUNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Equipment Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_CLASSNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Class number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_CHARACT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Characteristic Name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_VALUE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Characteristic Value</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_FUNCLOC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Functional Location</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Output Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_SMERP_HR_DOCATSTIMESHEET_DEL</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>BAPI Wrapper for BAPI_CATIMESHEETMGR_DELETE (Mobile)</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/CORE_BAPI_INPUT_STR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_PROFILE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CATSVARIAN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_TESTRUN</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>TESTRUN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_RELEASE_DATA</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>RELEASE_DATA</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IS_WORKFLOW_AGENT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>SWHACTOR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <TYP>/SYCLO/CORE_BAPI_OUTPUT_STR</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_CATSRECORDS_IN</PARAMETER>
+       <DBSTRUCT>BAPICATS4</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_WORKFLOW_TEXT</PARAMETER>
+       <DBSTRUCT>SOLISTI1</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Input Setting</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_PROFILE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data Entry Profile</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_TESTRUN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Test Run</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_RELEASE_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Release Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IS_WORKFLOW_AGENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Workflow Recipient</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Output Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_CATSRECORDS_IN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data Import</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_WORKFLOW_TEXT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Workflow Text</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_SMERP_HR_DOCATSTIMESHEET_GET</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>BAPI Wrapper - HR Timesheet Records Fetch</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/CORE_BAPI_INPUT_STR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IS_RETURN_DATA_DEMAND</PARAMETER>
+       <DEFAULT>&apos;XXXX&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/HR_CATS_BAPI_DEMND_STR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_FROM_DATE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BEGDA</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_TO_DATE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ENDDA</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_INCLUDE_ZERO_TIME</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>WDY_BOOLEAN</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <TYP>/SYCLO/CORE_BAPI_OUTPUT_STR</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_EMPLOYEE_ID_RA</PARAMETER>
+       <DBSTRUCT>/SYCLO/HR_PERNR_RANGE_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_WORKITEMID_RA</PARAMETER>
+       <TYPES>O</TYPES>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/HR_WORKITEMID_RANGE_STR</TYP>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_COUNTER_RA</PARAMETER>
+       <TYPES>O</TYPES>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/HR_COUNTER_RANGE_STR</TYP>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_PLANT_RA</PARAMETER>
+       <DBSTRUCT>/SYCLO/CORE_RANGE_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_CO_AREA_RA</PARAMETER>
+       <DBSTRUCT>/SYCLO/CORE_RANGE_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_SEND_CCTR_RA</PARAMETER>
+       <DBSTRUCT>/SYCLO/CO_KOSTL_RANGE_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_ACTTYPE_RA</PARAMETER>
+       <DBSTRUCT>/SYCLO/CORE_RANGE_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_VALID_CATSRECORDS</PARAMETER>
+       <DBSTRUCT>/SYCLO/HR_VALID_CATSDB_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_CATSRECORDS</PARAMETER>
+       <DBSTRUCT>/SYCLO/HR_CATSDB_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_CATSRECORDS_LONGTEXT</PARAMETER>
+       <TYPES>O</TYPES>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/HR_CATSDB_LONGTEXT_STR</TYP>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_CATSRECORDS_OVERVIEW</PARAMETER>
+       <TYPES>O</TYPES>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/HR_CATSDB_OVERVIEW_STR</TYP>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Input Setting</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IS_RETURN_DATA_DEMAND</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo HR Employee BAPI return data on demand setting</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_FROM_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Start Date</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_TO_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>End Date</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_INCLUDE_ZERO_TIME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>&apos;X&apos; - include time sheet records with 0 hours</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Output Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_EMPLOYEE_ID_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Personnel id range table sructure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_WORKITEMID_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo - CATS: Work Item for Workflow Timesheets</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_COUNTER_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo - CATS: Counter for Records in Time Recording</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_PLANT_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Selection range for plant</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_CO_AREA_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Selection range for controlling area</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_SEND_CCTR_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Selection range for sender cost center</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_ACTTYPE_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Selection range for activity type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_VALID_CATSRECORDS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>List of valid HR time sheet records on mobile device</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_CATSRECORDS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo HR time sheet structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_CATSRECORDS_LONGTEXT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo long text for CA time sheet records</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_CATSRECORDS_OVERVIEW</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo long text for CA time sheet records</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_SMERP_HR_TIMESHEETDEF_GET</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>BAPI Wrapper: Fetch Complex Table zctTimesheetDefault</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/CORE_BAPI_INPUT_STR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <TYP>/SYCLO/CORE_BAPI_OUTPUT_STR</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_COMPLEX_TABLE</PARAMETER>
+       <DBSTRUCT>ZSMERP_HR_TIMESHEETDEF_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_EXCHANGE_ACTION_DELETED</PARAMETER>
+       <TYPES>O</TYPES>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/HR_PERNR_DELETED_STR</TYP>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Input Setting</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Output Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_COMPLEX_TABLE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Time defaults Complex Table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_EXCHANGE_ACTION_DELETED</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo Exchange Action Deleted - Pernr</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_SMERP_MM_CTAGREEMENT_GET</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>BAPI Wrapper: Fetch Complex Table ctMovementType</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/CORE_BAPI_INPUT_STR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <TYP>/SYCLO/CORE_BAPI_OUTPUT_STR</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_COMPLEX_TABLE</PARAMETER>
+       <DBSTRUCT>ZSMERP_MM_KONNR_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_EXCHANGE_ACTION_DELETED</PARAMETER>
+       <TYPES>O</TYPES>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/MM_WERKS_DELETED_STR</TYP>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Input Setting</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Output Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_COMPLEX_TABLE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Agreement Complex Table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_EXCHANGE_ACTION_DELETED</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo Exchange Action Deleted - Plant</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_SMERP_MM_CTGLACCOUNT_GET</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>BAPI Wrapper: Fetch Complex Table ctMovementType</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/CORE_BAPI_INPUT_STR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <TYP>/SYCLO/CORE_BAPI_OUTPUT_STR</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_KOKRS_RA</PARAMETER>
+       <DBSTRUCT>/SYCLO/CORE_RANGE_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_KSTAR_RA</PARAMETER>
+       <DBSTRUCT>/SYCLO/CORE_RANGE_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_COMPLEX_TABLE</PARAMETER>
+       <DBSTRUCT>ZSMERP_MM_GLACCOUNT_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_EXCHANGE_ACTION_DELETED</PARAMETER>
+       <DBSTRUCT>/SYCLO/CORE_CT_DELETED_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Input Setting</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Output Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_KOKRS_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Controlling Area</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_KSTAR_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Cost Element</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_COMPLEX_TABLE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Group Complex Table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_EXCHANGE_ACTION_DELETED</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo Exchange Action Deleted</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_SMERP_MM_CTMATGRP_GET</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>BAPI Wrapper: Fetch Complex Table ctMovementType</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/CORE_BAPI_INPUT_STR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <TYP>/SYCLO/CORE_BAPI_OUTPUT_STR</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_COMPLEX_TABLE</PARAMETER>
+       <DBSTRUCT>ZSMERP_MM_MATKL_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_EXCHANGE_ACTION_DELETED</PARAMETER>
+       <TYPES>O</TYPES>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/MM_WERKS_DELETED_STR</TYP>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Input Setting</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Output Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_COMPLEX_TABLE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Group Complex Table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_EXCHANGE_ACTION_DELETED</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo Exchange Action Deleted - Plant</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_SMERP_PM_CTMATPNT_GET</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Fetch Maintenance Plant to Warehouse Plant</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/CORE_BAPI_INPUT_STR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <TYP>/SYCLO/CORE_BAPI_OUTPUT_STR</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_COMPLEX_TABLE</PARAMETER>
+       <DBSTRUCT>ZSMERP_PM_MATPNT_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Input Setting</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Output Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_COMPLEX_TABLE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Maintenance Plant</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_SMERP_PM_CTNOTIFSCRN_GET</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Fetch notification type</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/CORE_BAPI_INPUT_STR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <TYP>/SYCLO/CORE_BAPI_OUTPUT_STR</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_COMPLEX_TABLE</PARAMETER>
+       <DBSTRUCT>ZSMERP_PM_NOTIFSCRN_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_EXCHANGE_ACTION_DELETED</PARAMETER>
+       <TYPES>O</TYPES>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/PM_QMART_DELETED_STR</TYP>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_NOTIF_TYPE_RA</PARAMETER>
+       <DBSTRUCT>/SYCLO/CORE_RANGE_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Input Setting</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Output Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_COMPLEX_TABLE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Notification type configuration data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_EXCHANGE_ACTION_DELETED</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo Exchange Action Deleted - Notification Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_NOTIF_TYPE_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Selection Range Table for Notification Type</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_SMERP_PM_DONOTIFICATION_UPD</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>BAPI Wrapper: Notification modification</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/CORE_BAPI_INPUT_STR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_NOTIF_NO</PARAMETER>
+       <TYP>QMNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IS_NOTIF_HEADER</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BAPI2080_NOTHDRI</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IS_NOTIF_HEADER_X</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BAPI2080_NOTHDRI_X</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <TYP>/SYCLO/CORE_BAPI_OUTPUT_STR</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ES_NOTIF_HEADER</PARAMETER>
+       <TYP>BAPI2080_NOTHDRE</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_NOTIF_ITEM</PARAMETER>
+       <DBSTRUCT>BAPI2080_NOTITEMI</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_NOTIF_ITEM_X</PARAMETER>
+       <DBSTRUCT>BAPI2080_NOTITEMI_X</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_NOTIF_CAUSE</PARAMETER>
+       <DBSTRUCT>BAPI2080_NOTCAUSI</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_NOTIF_CAUSE_X</PARAMETER>
+       <DBSTRUCT>BAPI2080_NOTCAUSI_X</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_NOTIF_TASK</PARAMETER>
+       <DBSTRUCT>BAPI2080_NOTTASKI</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_NOTIF_TASK_X</PARAMETER>
+       <DBSTRUCT>BAPI2080_NOTTASKI_X</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_NOTIF_ACTIVITY</PARAMETER>
+       <DBSTRUCT>BAPI2080_NOTACTVI</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_NOTIF_ACTIVITY_X</PARAMETER>
+       <DBSTRUCT>BAPI2080_NOTACTVI_X</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_NOTIF_PARTNER</PARAMETER>
+       <DBSTRUCT>BAPI2080_NOTPARTNRI</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_NOTIF_PARTNER_X</PARAMETER>
+       <DBSTRUCT>BAPI2080_NOTPARTNRI_X</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Input Setting</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_NOTIF_NO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Notification No</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IS_NOTIF_HEADER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>BAPI Service Notification Header for creation</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IS_NOTIF_HEADER_X</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>BAPI flags for notification header</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Output Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_NOTIF_HEADER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>BAPI Service Notification Header</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_NOTIF_ITEM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Notification item for creation</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_NOTIF_ITEM_X</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Changeflags for notification item change</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_NOTIF_CAUSE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Notification causes for creation</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_NOTIF_CAUSE_X</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Changeflags for change notification cause</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_NOTIF_TASK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Notification task for creation</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_NOTIF_TASK_X</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Changeflags notificaiton tasks for change</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_NOTIF_ACTIVITY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Notification activity for creation</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_NOTIF_ACTIVITY_X</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Changeflags Activities work structure for change</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_NOTIF_PARTNER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Partners for creation/change</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_NOTIF_PARTNER_X</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Changeflags partners</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_SMERP_PM_WORKORD_GET</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>BAPI Wrapper: Work Order Dispatcher Search</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/CORE_BAPI_INPUT_STR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <TYP>/SYCLO/CORE_BAPI_OUTPUT_STR</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_ARBPL_RA</PARAMETER>
+       <DBSTRUCT>/SYCLO/CORE_RANGE_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_AUART_RA</PARAMETER>
+       <DBSTRUCT>/SYCLO/CORE_RANGE_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_TPLNR_RA</PARAMETER>
+       <DBSTRUCT>/SYCLO/CORE_RANGE_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_EQUNR_RA</PARAMETER>
+       <DBSTRUCT>/SYCLO/CORE_RANGE_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_GLTRS_RA</PARAMETER>
+       <DBSTRUCT>/SYCLO/CORE_RANGE_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_STORT_RA</PARAMETER>
+       <DBSTRUCT>/SYCLO/CORE_RANGE_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_MSGRP_RA</PARAMETER>
+       <DBSTRUCT>/SYCLO/CORE_RANGE_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_STREET_RA</PARAMETER>
+       <DBSTRUCT>/SYCLO/CORE_RANGE_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_CITY_RA</PARAMETER>
+       <DBSTRUCT>/SYCLO/CORE_RANGE_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_IPHAS_RA</PARAMETER>
+       <DBSTRUCT>/SYCLO/CORE_RANGE_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IT_PRIOK_RA</PARAMETER>
+       <DBSTRUCT>/SYCLO/CORE_RANGE_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_WORKORD_SRCH</PARAMETER>
+       <DBSTRUCT>ZSMERP_PM_WORKORD_SRCH_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Input Setting</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Output Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_ARBPL_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Generic all purpose range structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_AUART_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Generic all purpose range structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_TPLNR_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Generic all purpose range structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_EQUNR_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Generic all purpose range structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_GLTRS_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Generic all purpose range structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_STORT_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Generic all purpose range structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_MSGRP_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Generic all purpose range structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_STREET_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Generic all purpose range structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_CITY_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Generic all purpose range structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_IPHAS_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Generic all purpose range structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_PRIOK_RA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Generic all purpose range structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_WORKORD_SRCH</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Mobile work order Search</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_SMERP_WOSEARCH_DISP_UPD</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>BAPI Wrapper: Work Order Operation Update</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/CORE_BAPI_INPUT_STR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <TYP>/SYCLO/CORE_BAPI_OUTPUT_STR</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IT_ORDERS</PARAMETER>
+       <DBSTRUCT>ZSMERP_PM_WRKORD_UPD_STR</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Input Setting</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Output Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_ORDERS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Work Order Operation Update</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_SYCLOPM_CTMEASUREMENTDOC_CRT</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>BAPI Wrapper: Create Measurement Document</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SYCLO/CORE_BAPI_INPUT_STR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_MEASURING_POINT</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <TYP>IMRG-POINT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_SECONDARY_INDEX</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IMPT-PSORT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_READING_DATE</PARAMETER>
+       <DEFAULT>SY-DATUM</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IMRG-IDATE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_READING_TIME</PARAMETER>
+       <DEFAULT>SY-UZEIT</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IMRG-ITIME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_SHORT_TEXT</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IMRG-MDTXT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_READER</PARAMETER>
+       <DEFAULT>SY-UNAME</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IMRG-READR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_ORIGIN_INDICATOR</PARAMETER>
+       <DEFAULT>&apos;A&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IMRG-GENER</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_READING_AFTER_ACTION</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IMRG-DOCAF</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_RECORDED_VALUE_FLT</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IMRC_CNTRR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_RECORDED_VALUE</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>RIMR0-RECDC</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_RECORDED_UNIT</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>RIMR0-UNITR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_DIFFERENCE_READING</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IMRG-IDIFF</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_CODE_CATALOGUE</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IMRG-CODCT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_CODE_GROUP</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IMRG-CODGR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_VALUATION_CODE</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IMRG-VLCOD</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_CODE_VERSION</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IMRG-CVERS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_USER_DATA</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IMRG_USR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_CUSTOM_CHECK_DUPREC</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IREF-IIND</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_WITH_DIALOG_SCREEN</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IREF-IIND</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_PREPARE_UPDATE</PARAMETER>
+       <DEFAULT>&apos;X&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IREF-IIND</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_COMMIT_WORK</PARAMETER>
+       <DEFAULT>&apos;X&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IREF-IIND</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_WAIT_AFTER_COMMIT</PARAMETER>
+       <DEFAULT>&apos;X&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IREF-IIND</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_CREATE_NOTIFICATION</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>IREF-IIND</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_NOTIFICATION_TYPE</PARAMETER>
+       <DEFAULT>&apos;M2&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>QMEL-QMART</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_NOTIFICATION_PRIO</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>QMEL-PRIOK</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <TYP>/SYCLO/CORE_BAPI_OUTPUT_STR</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_MEASUREMENT_DOCUMENT</PARAMETER>
+       <TYP>IMRG-MDOCM</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ES_COMPLETE_DOCUMENT</PARAMETER>
+       <TYP>IMRG</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_NOTIFICATION</PARAMETER>
+       <TYP>QMEL-QMNUM</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_CUSTOM_DUPREC_OCCURED</PARAMETER>
+       <TYP>IREF-IIND</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <DBSTRUCT>BAPIRET2</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_BAPI_INPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Input Setting</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_MEASURING_POINT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Measuring Point (Primary key)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_SECONDARY_INDEX</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Item No. of Measuring point</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_READING_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Date of the measurement</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_READING_TIME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Time of measurement</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_SHORT_TEXT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Short text for measurement document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_READER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Person who took the measurement reading</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_ORIGIN_INDICATOR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Origin indicator</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_READING_AFTER_ACTION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>X = Measurement according to its task</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_RECORDED_VALUE_FLT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>MReading with floating value in unit of entry</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_RECORDED_VALUE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>MReading in unit of entry</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_RECORDED_UNIT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>UoM for document entry</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_DIFFERENCE_READING</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>X = MeasValue is counter reading difference</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_CODE_CATALOGUE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Catalog type of evaluation code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_CODE_GROUP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Code group of evaluation code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_VALUATION_CODE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Evaluation code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_CODE_VERSION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Version No. of evaluation code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_USER_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Customer-specific data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_CUSTOM_CHECK_DUPREC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>X = Customer-specific duplicate  Record check</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_WITH_DIALOG_SCREEN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>X = RFC with dialog screen</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_PREPARE_UPDATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>X = Prepare update (for COMMIT WORK)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_COMMIT_WORK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>X = Execute COMMIT WORK at ABAP level</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_WAIT_AFTER_COMMIT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>X = Wait for database update</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_CREATE_NOTIFICATION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>X = Create PM notification</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_NOTIFICATION_TYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Notification type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_NOTIFICATION_PRIO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Notification priority</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_BAPI_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Syclo BAPI Wrapper Standard Output Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_MEASUREMENT_DOCUMENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Measurement Document (Primary Key)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ES_COMPLETE_DOCUMENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Complete Measurement Document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_NOTIFICATION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Notification (Primary Key)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_CUSTOM_DUPREC_OCCURED</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>X = Customer-defined Duplicate Record occured</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

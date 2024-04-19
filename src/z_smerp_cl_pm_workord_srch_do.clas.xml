@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>Z_SMERP_CL_PM_WORKORD_SRCH_DO</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>DO handler - Work Order Search</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>I01</KEY>
+     <ENTRY>No data found</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>I13</KEY>
+     <ENTRY>Calling FuncMod ~ BAPI_ALM_ORDER_MAINTAIN...</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>I01</KEY>
+       <ENTRY>K. Daten gef.</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GR_PLANT_BAPI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Range table for Plant</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GR_PLANT_DOF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Range table for Plant</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GT_ORDERS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Work Order Operation Update</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_HIER_LEVEL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Number of Hierarchy levels</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>BADI_IMPL</TOOL>
+   <SHORTTEXT>Functional Location Address Enhancement Mobile Additional Fields</SHORTTEXT>
+   <SPOT_NAME>/SMERP/MDO_PM_FLOC</SPOT_NAME>
+   <IMPL>
+    <ENH_BADI_IMPL_DATA>
+     <SPOT_NAME>/SMERP/MDO_PM_FLOC</SPOT_NAME>
+     <BADI_NAME>/SMERP/MDO_PM_FLOC_BADI</BADI_NAME>
+     <IMPL_NAME>ZZ_SMERP_PM_FLOC_BADI</IMPL_NAME>
+     <IMPL_CLASS>ZCL_SMERP_MDO_FLOC</IMPL_CLASS>
+     <ACTIVE>X</ACTIVE>
+     <IMPL_SHORTTEXT>Implementation: BADI Definition for Functional Location MDO Processing</IMPL_SHORTTEXT>
+     <IMPL_SHORTTEXT_ID>63C6C7BDD6C62180E10080240A22C1DD</IMPL_SHORTTEXT_ID>
+    </ENH_BADI_IMPL_DATA>
+   </IMPL>
+   <SOTR>
+    <item>
+     <HEADER>
+      <CONCEPT>63C6C785D6C62180E10080240A22C1DD</CONCEPT>
+      <CREA_LAN>E</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>AAI=</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXT>
+       <CONCEPT>63C6C785D6C62180E10080240A22C1DD</CONCEPT>
+       <LANGU>E</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <STATUS>R</STATUS>
+       <LENGTH>096</LENGTH>
+       <TEXT>Functional Location Address Enhancement Mobile Additional Fields</TEXT>
+      </SOTR_TEXT>
+     </ENTRIES>
+    </item>
+    <item>
+     <HEADER>
+      <CONCEPT>63C6C7BDD6C62180E10080240A22C1DD</CONCEPT>
+      <CREA_LAN>E</CREA_LAN>
+      <TRALA_TYPE>1</TRALA_TYPE>
+      <OBJID_VEC>AAI=</OBJID_VEC>
+     </HEADER>
+     <ENTRIES>
+      <SOTR_TEXT>
+       <CONCEPT>63C6C7BDD6C62180E10080240A22C1DD</CONCEPT>
+       <LANGU>E</LANGU>
+       <LFD_NUM>0001</LFD_NUM>
+       <FLAG_CNTXT>X</FLAG_CNTXT>
+       <STATUS>R</STATUS>
+       <LENGTH>105</LENGTH>
+       <TEXT>Implementation: BADI Definition for Functional Location MDO Processing</TEXT>
+      </SOTR_TEXT>
+     </ENTRIES>
+    </item>
+   </SOTR>
+   <SOTR_USE>
+    <SOTR_USE>
+     <PGMID>R3TR</PGMID>
+     <OBJECT>ENHO</OBJECT>
+     <OBJ_NAME>ZZ_ENH_SMERP_FLOC_DO</OBJ_NAME>
+     <CONCEPT>63C6C785D6C62180E10080240A22C1DD</CONCEPT>
+     <LFD_NUM>0001</LFD_NUM>
+    </SOTR_USE>
+    <SOTR_USE>
+     <PGMID>R3TR</PGMID>
+     <OBJECT>ENHO</OBJECT>
+     <OBJ_NAME>ZZ_ENH_SMERP_FLOC_DO</OBJ_NAME>
+     <CONCEPT>63C6C7BDD6C62180E10080240A22C1DD</CONCEPT>
+     <LFD_NUM>0001</LFD_NUM>
+    </SOTR_USE>
+   </SOTR_USE>
+  </asx:values>
+ </asx:abap>
+</abapGit>
